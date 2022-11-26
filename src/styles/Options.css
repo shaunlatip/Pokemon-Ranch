@@ -1,0 +1,12 @@
+.options {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(194, 194, 194, 1);
+    border-radius: 4px;
+    margin: 1em;
+    min-width: 200px;
+    align-items: stretch;
+    padding: 2em;
+    text-align: start;
+    gap: 1em;
+  }
