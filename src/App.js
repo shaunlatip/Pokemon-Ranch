@@ -100,7 +100,7 @@ function App() {
 
         // checks if any typing filters are active
         const typingCheckedOrNot = (element) => {
-          const typings = ["Normal", "Fire", "Water/Ice", "Electric", "Steel/Psychic", "Grass"];
+          const typings = ["Normal", "Fire", "Water", "Water/Ice", "Electric", "Steel/Psychic", "Grass"];
           for (let i = 0; i < typings.length; i++) {
             if (element === typings[i]) {
               return true;

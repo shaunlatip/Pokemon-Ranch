@@ -27,6 +27,7 @@ export default function Options(
     // Setting states for each filter
     const [normalFilter, setNormalFilter] = React.useState(false);
     const [fireFilter, setFireFilter] = React.useState(false);
+    const [waterFilter, setWaterFilter] = React.useState(false);
     const [waterIceFilter, setWaterIceFilter] = React.useState(false);
     const [electricFilter, setElectricFilter] = React.useState(false);
     const [steelPsychicFilter, setSteelPsychicFilter] = React.useState(false);
@@ -48,6 +49,9 @@ export default function Options(
                 break;
             case "Fire":
                 setFireFilter(!fireFilter);
+                break;
+            case "Water":
+                setWaterFilter(!waterFilter);
                 break;
             case "Water/Ice":
                 setWaterIceFilter(!waterIceFilter);
@@ -87,6 +91,7 @@ export default function Options(
         // reset states to false values
         setNormalFilter(false);
         setFireFilter(false);
+        setWaterFilter(false);
         setWaterIceFilter(false);
         setElectricFilter(false);
         setSteelPsychicFilter(false);
@@ -121,6 +126,7 @@ export default function Options(
                 <FormControlLabel control={<Checkbox checked={normalFilter} onChange={handleTypeChange} value="Normal" />} label="Normal" />
                 <FormControlLabel control={<Checkbox checked={fireFilter} onChange={handleTypeChange} value="Fire" />} label="Fire" />
                 <FormControlLabel control={<Checkbox checked={waterIceFilter} onChange={handleTypeChange} value="Water/Ice" />} label="Water/Ice" />
+                <FormControlLabel control={<Checkbox checked={waterFilter} onChange={handleTypeChange} value="Water" />} label="Water" />
                 <FormControlLabel control={<Checkbox checked={electricFilter} onChange={handleTypeChange} value="Electric" />} label="Electric" />
                 <FormControlLabel control={<Checkbox checked={steelPsychicFilter} onChange={handleTypeChange} value="Steel/Psychic" />} label="Steel/Psychic" />
                 <FormControlLabel control={<Checkbox checked={grassFilter} onChange={handleTypeChange} value="Grass" />} label="Grass" />
