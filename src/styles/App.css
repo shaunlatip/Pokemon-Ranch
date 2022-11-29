@@ -52,3 +52,9 @@
   gap: 1em;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+}
+

@@ -8,8 +8,9 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import TeamAggregator from './components/TeamAggregator.js';
 
-// TODO: Add reset button
+// TODO: Add separate aggregator component
 
 function App() {
 
@@ -246,17 +247,23 @@ function App() {
       </div>
 
       <div className="body">
-        <Options 
-          sorting={sorting} 
-          setSorting={setSorting} 
-          list={list} 
-          setList={setList} 
-          sortList={sortList}
-          teamStats={teamStats}
-          updateFilter={updateFilter}
-          team={team}
-          resetType={resetType}
-        />
+        <div className="sidebar">
+          <TeamAggregator
+            team={team}
+            teamStats={teamStats}
+          />
+          <Options 
+            sorting={sorting} 
+            setSorting={setSorting} 
+            list={list} 
+            setList={setList} 
+            sortList={sortList}
+            teamStats={teamStats}
+            updateFilter={updateFilter}
+            team={team}
+            resetType={resetType}
+          />
+        </div>
         <div className="gallery">
         {list.map((item) => (
           <>

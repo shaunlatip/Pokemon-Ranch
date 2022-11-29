@@ -147,7 +147,7 @@ export default function Options(
                 Reset filters
             </Button>
 
-            <h3>Team Base Stats: {teamStats}</h3>
+            {/* <h3>Team Base Stats: {teamStats}</h3> */}
 
 
         </div>
