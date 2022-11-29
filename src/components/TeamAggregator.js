@@ -9,8 +9,15 @@ export default function TeamAggregator ({
         if(team.length == 0) {
             return("No Pokemon in Team")
         }
+
+        let string = team[0].name;
+
+        for (var i = 1; i < team.length; i++) {
+            string = string + ', ' + team[i].name;
+        }
+
         return (
-            String(team.map(pokemon => pokemon.name))
+            string
             )
     }
 
