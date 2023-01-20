@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-https://vegananteater125.github.io/development/
+https://shaunlatip.github.io/Pokemon-Ranch/
 
 ### Goal and Value of the Application
 This is an application to help users select a team of pokemon from a list of curated cute pokemon, allowing users to browse pokemon through their in-game type (e.g. Fire, Electric), their ability to evolve, their relative strengths as shown through base stats, and pokedex number.
